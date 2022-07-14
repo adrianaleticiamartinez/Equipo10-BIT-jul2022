@@ -1,11 +1,10 @@
 import csv
 
-#print("Ingrese el identificador del usuario")
-#uid= input()
+print("Ingrese el identificador del usuario")
+uid= input()
 #print("Ingrese el password")
 #password = input()
 
-uid = 'EduardoE'
 with open('baseUsuarios.csv') as file:
     reader = csv.reader(file)
     for row in reader:
@@ -21,7 +20,7 @@ idCliente = input()
 def buscarUsuarios(idCliente,perfil):
     if(perfil == "Manager"):
         print('entrando a Manager')
-        with open('baseClientesHackaton2022.csv') as file:
+        with open('base.csv') as file:
             reader = csv.reader(file)
             for row in reader:
                 datos = row
@@ -30,9 +29,23 @@ def buscarUsuarios(idCliente,perfil):
                     break
 
     elif(perfil == "Validador"):
-        print()
+        print('entrando a Validador')
+        with open('base.csv') as file:
+            reader = csv.reader(file)
+            for row in reader:
+                datos = row
+                if(datos[0] == idCliente):
+                    print(datos)
+                    break
 
     elif(perfil == "Restringido"):
-        print()
+        print('Entrando a Restringido')
+        with open('base.csv') as file:
+            reader = csv.reader(file)
+            for row in reader:
+                datos = row
+                if(datos[0] == idCliente):
+                    print(datos[0], datos[1], datos[5], datos[6], datos[11])
+                    break
 
 buscarUsuarios(idCliente,perfil)
