@@ -1,3 +1,5 @@
+import csv
+
 class usuario():
     
     numUsuarios = 0
@@ -45,3 +47,5 @@ class usuario():
         else:
             conect = "desconectado"
         return f"Mi nombre de usuario es {self.nombre} y estoy {conect}"
+
+
