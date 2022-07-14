@@ -66,14 +66,7 @@ def iniciarSesion():
 def cerrarSesion():
     pass
 
-def registrarUsuario():
-    name = nombreUsuario.get()
-    passwd = contraUsuario.get()
-    newUser = usuario(name,passwd)
-    usuarios.append(newUser)
-    MessageBox.showinfo("Resgistro Exitoso",f"Se registro el usuario [{name}] con EXITO!!!")
-    nombreUsuario.set("")
-    contraUsuario.set("")
+
 
 if __name__=="__main__":
     # user1 = usuario(input("Ingrese un nombre: "),input("Igrese una contraseña: "))
