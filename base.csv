@@ -1,0 +1,6 @@
+idCliente,nombre,apellidoPaterno,apellidoMaterno,fechaNacimiento,sexo,segmento,nacionalidad,rfc,tipoID,cuenta,email
+BF000002999,Amelia,Rivero,Calva,25/04/54/Femenino,1,Mexicana,RICA2504540SQ,Licencia,RpiCnTz0mwMdQrUChFMs,BE12 7743 3050 0148 8965 5830,ameliarivero@outlook.com
+BF000003000,Abril,Ocaña,Almeda,23/10/88,Femenino,1,Mexicana,OAAA2310889RD,Licencia,eNZIQWroluPdimMBvLvR,BE73 6285 5537 7223 3693 3275,
+CI000003001,Claudia Carolina,Molina,Almeda,12/07/50,Femenino,2,Mexicana,MOAC120750TTY,INE/IFE,iXfXzA34Qyg5sw3bJokt,BE25 4000 0249 9246 6992 2997,
+BF000003002,Greta,Arteaga,Guarneros,08/06/78,Femenino,1,Mexicana,AEGG080678AML,Licencia,HnDPgVRPa5JvXEznW96w,BE80 3799 9650 0558 8489 9180,
+BF000003003,Enzo,Olavarrieta,Arellanes,01/05/68,Masculino,1,Mexicana,OAAE010568SSG,Licencia,ZUwnG4twfafZiWGQLg3X,BE54 4277 7139 9933 3620 0901,
