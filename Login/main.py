@@ -10,16 +10,12 @@ contraUsuario = StringVar()
 usuarios = []
 
 def createGUI():
-    # ventana principal
-    #root = Tk()
+  
     root.title("Login Usuario")
-
-    # mainFrame
     mainFrame = Frame(root)
     mainFrame.pack()
     mainFrame.config(width=480,height=320)#,bg="lightblue")
-
-    # textos y titulos
+    
     titulo = Label(mainFrame,text="Login de Usuario",font=("Arial",24))
     titulo.grid(column=0,row=0,padx=10,pady=10,columnspan=2)
 
@@ -28,25 +24,18 @@ def createGUI():
     passLabel = Label(mainFrame,text="Contraseña: ")
     passLabel.grid(column=0,row=2)
 
-    # entradas de texto
-    # nombreUsuario = StringVar()
     nombreUsuario.set("")
     nombreEntry = Entry(mainFrame,textvariable=nombreUsuario)
     nombreEntry.grid(column=1,row=1)
 
-    # contraUsuario = StringVar()
     contraUsuario.set("")
     contraEntry = Entry(mainFrame,textvariable=contraUsuario,show="*")
     contraEntry.grid(column=1,row=2)
 
-    # botones
     iniciarSesionButton = ttk.Button(mainFrame,text="Iniciar Sesion",command=iniciarSesion)
     iniciarSesionButton.grid(column=1,row=3,ipadx=5,ipady=5,padx=10,pady=10)
 
     cerrarSesionButton = ttk.Button(mainFrame,text="Cerrar Sesion",command=cerrarSesion)
-
-   # registrarButton = ttk.Button(mainFrame,text="Registrar",command=registrarUsuario)
-    #registrarButton.grid(column=0,row=3,ipadx=5,ipady=5,padx=10,pady=10)
     
     root.mainloop()
 
@@ -66,10 +55,7 @@ def iniciarSesion():
 def cerrarSesion():
     pass
 
-
-
 if __name__=="__main__":
-    # user1 = usuario(input("Ingrese un nombre: "),input("Igrese una contraseña: "))
-    user1 = usuario("lucas","1234")
+    user1 = usuario("Eduardo","1234")
     usuarios.append(user1)
     createGUI()
