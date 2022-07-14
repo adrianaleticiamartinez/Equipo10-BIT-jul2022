@@ -28,7 +28,7 @@ def buscarUsuarios(idCliente,rol):
         print()
     elif(rol == "Validador"):
         print()
-    else:
+    else:(rol == "Restringido")
         print()
 
 
