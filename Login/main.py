@@ -20,10 +20,10 @@ def createGUI():
     mainFrame.config(width=480,height=320)#,bg="lightblue")
 
     # textos y titulos
-    titulo = Label(mainFrame,text="Login de Usuario con Python",font=("Arial",24))
+    titulo = Label(mainFrame,text="Login de Usuario",font=("Arial",24))
     titulo.grid(column=0,row=0,padx=10,pady=10,columnspan=2)
 
-    nombreLabel = Label(mainFrame,text="Nombre: ")
+    nombreLabel = Label(mainFrame,text="Usuario: ")
     nombreLabel.grid(column=0,row=1)
     passLabel = Label(mainFrame,text="Contraseña: ")
     passLabel.grid(column=0,row=2)
