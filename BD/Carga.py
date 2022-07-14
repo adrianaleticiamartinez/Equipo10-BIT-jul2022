@@ -2,7 +2,7 @@ import mysql.connector
 import csv
 
 count=0
-with open(r"C:\Users\Angel\Desktop\BBVA BIT\Python\Equipo10-BIT-jul2022\BD\baseClientesHackaton2022.csv", newline='') as File:  
+with open("baseClientesHackaton2022.csv") as File:  
     reader = csv.reader(File, delimiter=',')
     for row in reader:
         print(row)
